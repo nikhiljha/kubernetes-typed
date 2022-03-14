@@ -2,7 +2,7 @@
 """V1JSONSchemaPropsDict generated type."""
 from typing import TypedDict, Any, Dict, List
 
-from kubernetes_typed.client import V1ExternalDocumentationDict
+from kubernetes_typed.client import V1ExternalDocumentationDict, V1ValidationRuleDict
 
 V1JSONSchemaPropsDict = TypedDict(
     "V1JSONSchemaPropsDict",
@@ -50,6 +50,7 @@ V1JSONSchemaPropsDict = TypedDict(
         "x-kubernetes-list-type": str,
         "x-kubernetes-map-type": str,
         "x-kubernetes-preserve-unknown-fields": bool,
+        "x-kubernetes-validations": List[V1ValidationRuleDict],
     },
     total=False,
 )

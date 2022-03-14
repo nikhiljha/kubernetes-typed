@@ -2,7 +2,7 @@
 """V1PodSecurityContextDict generated type."""
 from typing import TypedDict, List
 
-from kubernetes_typed.client import V1SELinuxOptionsDict, V1SysctlDict, V1WindowsSecurityContextOptionsDict
+from kubernetes_typed.client import V1SELinuxOptionsDict, V1SeccompProfileDict, V1SysctlDict, V1WindowsSecurityContextOptionsDict
 
 V1PodSecurityContextDict = TypedDict(
     "V1PodSecurityContextDict",
@@ -13,6 +13,7 @@ V1PodSecurityContextDict = TypedDict(
         "runAsNonRoot": bool,
         "runAsUser": int,
         "seLinuxOptions": V1SELinuxOptionsDict,
+        "seccompProfile": V1SeccompProfileDict,
         "supplementalGroups": List[int],
         "sysctls": List[V1SysctlDict],
         "windowsOptions": V1WindowsSecurityContextOptionsDict,

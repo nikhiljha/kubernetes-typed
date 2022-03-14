@@ -5,6 +5,7 @@ from typing import TypedDict
 V1NetworkPolicyPortDict = TypedDict(
     "V1NetworkPolicyPortDict",
     {
+        "endPort": int,
         "port": object,
         "protocol": str,
     },

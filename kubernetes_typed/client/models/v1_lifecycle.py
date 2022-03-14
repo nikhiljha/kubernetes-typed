@@ -2,13 +2,13 @@
 """V1LifecycleDict generated type."""
 from typing import TypedDict
 
-from kubernetes_typed.client import V1HandlerDict
+from kubernetes_typed.client import V1LifecycleHandlerDict
 
 V1LifecycleDict = TypedDict(
     "V1LifecycleDict",
     {
-        "postStart": V1HandlerDict,
-        "preStop": V1HandlerDict,
+        "postStart": V1LifecycleHandlerDict,
+        "preStop": V1LifecycleHandlerDict,
     },
     total=False,
 )

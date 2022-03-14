@@ -2,13 +2,15 @@
 """V1beta1SubjectDict generated type."""
 from typing import TypedDict
 
+from kubernetes_typed.client import V1beta1GroupSubjectDict, V1beta1ServiceAccountSubjectDict, V1beta1UserSubjectDict
+
 V1beta1SubjectDict = TypedDict(
     "V1beta1SubjectDict",
     {
-        "apiGroup": str,
+        "group": V1beta1GroupSubjectDict,
         "kind": str,
-        "name": str,
-        "namespace": str,
+        "serviceAccount": V1beta1ServiceAccountSubjectDict,
+        "user": V1beta1UserSubjectDict,
     },
     total=False,
 )

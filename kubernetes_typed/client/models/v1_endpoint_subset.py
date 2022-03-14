@@ -2,14 +2,14 @@
 """V1EndpointSubsetDict generated type."""
 from typing import TypedDict, List
 
-from kubernetes_typed.client import V1EndpointAddressDict, V1EndpointPortDict
+from kubernetes_typed.client import CoreV1EndpointPortDict, V1EndpointAddressDict
 
 V1EndpointSubsetDict = TypedDict(
     "V1EndpointSubsetDict",
     {
         "addresses": List[V1EndpointAddressDict],
         "notReadyAddresses": List[V1EndpointAddressDict],
-        "ports": List[V1EndpointPortDict],
+        "ports": List[CoreV1EndpointPortDict],
     },
     total=False,
 )

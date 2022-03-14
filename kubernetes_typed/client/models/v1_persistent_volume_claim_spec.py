@@ -9,6 +9,7 @@ V1PersistentVolumeClaimSpecDict = TypedDict(
     {
         "accessModes": List[str],
         "dataSource": V1TypedLocalObjectReferenceDict,
+        "dataSourceRef": V1TypedLocalObjectReferenceDict,
         "resources": V1ResourceRequirementsDict,
         "selector": V1LabelSelectorDict,
         "storageClassName": str,

@@ -8,6 +8,8 @@ V1CustomResourceDefinitionVersionDict = TypedDict(
     "V1CustomResourceDefinitionVersionDict",
     {
         "additionalPrinterColumns": List[V1CustomResourceColumnDefinitionDict],
+        "deprecated": bool,
+        "deprecationWarning": str,
         "name": str,
         "schema": V1CustomResourceValidationDict,
         "served": bool,

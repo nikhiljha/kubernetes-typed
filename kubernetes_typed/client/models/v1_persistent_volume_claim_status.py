@@ -8,9 +8,11 @@ V1PersistentVolumeClaimStatusDict = TypedDict(
     "V1PersistentVolumeClaimStatusDict",
     {
         "accessModes": List[str],
+        "allocatedResources": Dict[str, str],
         "capacity": Dict[str, str],
         "conditions": List[V1PersistentVolumeClaimConditionDict],
         "phase": str,
+        "resizeStatus": str,
     },
     total=False,
 )

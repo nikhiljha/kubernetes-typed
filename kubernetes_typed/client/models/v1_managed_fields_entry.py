@@ -11,6 +11,7 @@ V1ManagedFieldsEntryDict = TypedDict(
         "fieldsV1": object,
         "manager": str,
         "operation": str,
+        "subresource": str,
         "time": datetime.datetime,
     },
     total=False,

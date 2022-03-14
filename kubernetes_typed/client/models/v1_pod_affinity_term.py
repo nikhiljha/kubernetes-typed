@@ -8,6 +8,7 @@ V1PodAffinityTermDict = TypedDict(
     "V1PodAffinityTermDict",
     {
         "labelSelector": V1LabelSelectorDict,
+        "namespaceSelector": V1LabelSelectorDict,
         "namespaces": List[str],
         "topologyKey": str,
     },

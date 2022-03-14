@@ -7,6 +7,7 @@ from kubernetes_typed.client import V1StatefulSetConditionDict
 V1StatefulSetStatusDict = TypedDict(
     "V1StatefulSetStatusDict",
     {
+        "availableReplicas": int,
         "collisionCount": int,
         "conditions": List[V1StatefulSetConditionDict],
         "currentReplicas": int,

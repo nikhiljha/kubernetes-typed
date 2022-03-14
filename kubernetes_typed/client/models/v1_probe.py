@@ -2,18 +2,20 @@
 """V1ProbeDict generated type."""
 from typing import TypedDict
 
-from kubernetes_typed.client import V1ExecActionDict, V1HTTPGetActionDict, V1TCPSocketActionDict
+from kubernetes_typed.client import V1ExecActionDict, V1GRPCActionDict, V1HTTPGetActionDict, V1TCPSocketActionDict
 
 V1ProbeDict = TypedDict(
     "V1ProbeDict",
     {
         "exec": V1ExecActionDict,
         "failureThreshold": int,
+        "grpc": V1GRPCActionDict,
         "httpGet": V1HTTPGetActionDict,
         "initialDelaySeconds": int,
         "periodSeconds": int,
         "successThreshold": int,
         "tcpSocket": V1TCPSocketActionDict,
+        "terminationGracePeriodSeconds": int,
         "timeoutSeconds": int,
     },
     total=False,

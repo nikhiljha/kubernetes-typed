@@ -10,6 +10,7 @@ V1beta1CronJobStatusDict = TypedDict(
     {
         "active": List[V1ObjectReferenceDict],
         "lastScheduleTime": datetime.datetime,
+        "lastSuccessfulTime": datetime.datetime,
     },
     total=False,
 )

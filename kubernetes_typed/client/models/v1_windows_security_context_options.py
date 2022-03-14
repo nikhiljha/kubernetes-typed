@@ -7,6 +7,7 @@ V1WindowsSecurityContextOptionsDict = TypedDict(
     {
         "gmsaCredentialSpec": str,
         "gmsaCredentialSpecName": str,
+        "hostProcess": bool,
         "runAsUserName": str,
     },
     total=False,

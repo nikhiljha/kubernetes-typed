@@ -6,6 +6,8 @@ V1beta1EndpointConditionsDict = TypedDict(
     "V1beta1EndpointConditionsDict",
     {
         "ready": bool,
+        "serving": bool,
+        "terminating": bool,
     },
     total=False,
 )

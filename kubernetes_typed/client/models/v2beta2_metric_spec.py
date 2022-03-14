@@ -2,11 +2,18 @@
 """V2beta2MetricSpecDict generated type."""
 from typing import TypedDict
 
-from kubernetes_typed.client import V2beta2ExternalMetricSourceDict, V2beta2ObjectMetricSourceDict, V2beta2PodsMetricSourceDict, V2beta2ResourceMetricSourceDict
+from kubernetes_typed.client import (
+    V2beta2ContainerResourceMetricSourceDict,
+    V2beta2ExternalMetricSourceDict,
+    V2beta2ObjectMetricSourceDict,
+    V2beta2PodsMetricSourceDict,
+    V2beta2ResourceMetricSourceDict,
+)
 
 V2beta2MetricSpecDict = TypedDict(
     "V2beta2MetricSpecDict",
     {
+        "containerResource": V2beta2ContainerResourceMetricSourceDict,
         "external": V2beta2ExternalMetricSourceDict,
         "object": V2beta2ObjectMetricSourceDict,
         "pods": V2beta2PodsMetricSourceDict,

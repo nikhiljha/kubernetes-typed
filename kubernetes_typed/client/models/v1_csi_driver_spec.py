@@ -2,11 +2,17 @@
 """V1CSIDriverSpecDict generated type."""
 from typing import TypedDict, List
 
+from kubernetes_typed.client import StorageV1TokenRequestDict
+
 V1CSIDriverSpecDict = TypedDict(
     "V1CSIDriverSpecDict",
     {
         "attachRequired": bool,
+        "fsGroupPolicy": str,
         "podInfoOnMount": bool,
+        "requiresRepublish": bool,
+        "storageCapacity": bool,
+        "tokenRequests": List[StorageV1TokenRequestDict],
         "volumeLifecycleModes": List[str],
     },
     total=False,

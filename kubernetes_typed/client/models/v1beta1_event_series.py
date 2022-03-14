@@ -8,7 +8,6 @@ V1beta1EventSeriesDict = TypedDict(
     {
         "count": int,
         "lastObservedTime": datetime.datetime,
-        "state": str,
     },
     total=False,
 )

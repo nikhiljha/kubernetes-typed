@@ -9,10 +9,12 @@ V1JobSpecDict = TypedDict(
     {
         "activeDeadlineSeconds": int,
         "backoffLimit": int,
+        "completionMode": str,
         "completions": int,
         "manualSelector": bool,
         "parallelism": int,
         "selector": V1LabelSelectorDict,
+        "suspend": bool,
         "template": V1PodTemplateSpecDict,
         "ttlSecondsAfterFinished": int,
     },

@@ -5,6 +5,7 @@ from typing import TypedDict
 V1RollingUpdateDaemonSetDict = TypedDict(
     "V1RollingUpdateDaemonSetDict",
     {
+        "maxSurge": object,
         "maxUnavailable": object,
     },
     total=False,

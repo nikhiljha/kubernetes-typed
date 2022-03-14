@@ -2,14 +2,16 @@
 """V1beta1EndpointDict generated type."""
 from typing import TypedDict, Dict, List
 
-from kubernetes_typed.client import V1ObjectReferenceDict, V1beta1EndpointConditionsDict
+from kubernetes_typed.client import V1ObjectReferenceDict, V1beta1EndpointConditionsDict, V1beta1EndpointHintsDict
 
 V1beta1EndpointDict = TypedDict(
     "V1beta1EndpointDict",
     {
         "addresses": List[str],
         "conditions": V1beta1EndpointConditionsDict,
+        "hints": V1beta1EndpointHintsDict,
         "hostname": str,
+        "nodeName": str,
         "targetRef": V1ObjectReferenceDict,
         "topology": Dict[str, str],
     },
