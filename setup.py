@@ -5,7 +5,7 @@ from typing import List
 
 from setuptools import find_packages, setup
 
-PACKAGE_VERSION = "23.3.0"
+PACKAGE_VERSION = "25.3.0"
 
 
 def find_stub_files(name: str) -> List[str]:
@@ -55,9 +55,9 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3 :: Only",
         "Topic :: Software Development",
         "Typing :: Typed",
